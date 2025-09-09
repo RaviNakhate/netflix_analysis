@@ -24,6 +24,7 @@ netflix['date_added'] = pd.to_datetime(
 
 # Extract Year from date_added
 netflix['year_added'] = netflix['date_added'].dt.year
+# print(df['date_added'].dt.month.astype('Int64'))
 
 # Exploratory Data Analysis (EDA)
 # Count of Movies vs TV Shows
@@ -68,3 +69,4 @@ print("2. The USA, India, and UK are the top 3 countries contributing the most c
 print("3. Netflix has added maximum content after 2015, showing rapid growth.")
 print("4. Drama, Comedy, and International Movies are the most common genres.")
 print("5. Most shows are rated 'TV-MA' (Mature Audience).")
+
